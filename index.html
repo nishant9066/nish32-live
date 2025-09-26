@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HLS Player App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>HLS Player App</h1>
+    <video id="video" controls></video>
+    <div class="input-box">
+      <input id="urlInput" type="text" placeholder="Enter HLS URL" value="https://dai.google.com/ssai/event/jfZLIA-eQqGOymVqrQstNA/master.m3u8" />
+      <button onclick="loadStream()">Play</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
